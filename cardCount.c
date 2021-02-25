@@ -8,18 +8,21 @@ int	main(void)
 	puts("Введите название карты: ");
 	scanf("%2s", card_name);
 	int val = 0;
-	if (card_name[0] == 'K')
+	switch (card_name[0])
 	{
+	case 'K':
 		val = 10;
-	}
-	else if (card_name[0] == 'Q')
+		break;
+	case 'Q':
 		val = 10;
-	else if (card_name[0] == 'J')
+		break;
+	case 'J':
 		val = 10;
-	else if (card_name[0] == 'A')
+		break;
+	case 'A':
 		val = 11;
-	else
-	{
+		break;
+	default: 
 		val = atoi(card_name);
 	}
 	if ((val >= 3) && (val <= 6))
