@@ -11,11 +11,7 @@ int	main(void)
 	switch (card_name[0])
 	{
 	case 'K':
-		val = 10;
-		break;
 	case 'Q':
-		val = 10;
-		break;
 	case 'J':
 		val = 10;
 		break;
